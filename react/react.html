@@ -1,0 +1,159 @@
+<script>
+
+    // what is react js???
+    // 1)//  react is a javascript libraray that build ui(user interface)
+    // 2)react is not a framework like angular etc
+    // 3)React is an open-source project created by Facebook.
+    // 4)React is used to build user interfaces (UI) on the front end
+//    5) // React is the view layer of an MVC application (Model View Controller)
+// 6)One of the most important aspects of React is the fact that you can create components, which are like custom, reusable HTML elements, to quickly and efficiently build user interfaces. React also streamlines how data is stored and handled, 
+// using state and props.
+
+
+//  what is babel ??
+
+//  babel is javascript compiler that converts es6 code into old jaavscript bczz browser doest not know es6
+
+
+//   what is jsx??
+
+    // 1)jsx is a javacsriptxml
+    // 2)it allows us to write html in react 
+    // 3)JSX allows us to write HTML elements in JavaScript
+
+
+    //   what is components???
+
+        // components makes code spilitting it breaks code 
+        // into a pices and then we can make it reusable 
+
+
+        //  there are two types of components
+
+        // 1)function components(this is one of the simplest way to define components)(this is purely a javascript function)
+        // 2)class components(you can also define component with classes but it amy be complex)(this s a purely es6 classes)
+
+
+
+        // what is props
+
+        // 1)//   props means a property
+// 2) we can pass a property like variable array object etc i one components to other components
+// 3) props is immutable means we cant change props
+
+
+
+    //  hwo to handle events
+
+    // 1)React handle events is like a jaavscript dom handling
+
+
+
+    //   what is keys 
+
+    // Keys help React identify which items have changed, are added, or are removed. Keys 
+    // should be given to the elements inside the array to give the elements a stable identity:
+        // key={element?.id} eg
+
+        // Keys Must Only Be Unique Among Siblings
+
+
+        //   what is controlled and uncontrolled components in react js
+
+        //   conttrolled compoentns
+        // an input form filed which value controlls react in this way
+        // uncontrolled components 
+        //  an input field that handle by jaavscript dom we ca use ref for getting this value
+
+
+        // what is liting state up
+
+        // In React, sharing state is accomplished by moving it up to the closest common ancestor 
+        // of the components that need it. This is called “lifting state up”
+
+
+           
+
+    //   Hooks
+
+
+    //  hooks are the new features in react 16 they allow to write state without writting a class 
+
+//    there are many hooks mentioned below
+
+       
+//    1) useState() hooks manage state we can destructure that it returns two things first is 
+//      we can define initial state and second we can define updated function there we can update our state
+        //  const [initialValue, setIninitialValue]=useState(0) eg
+
+
+
+        // hooks doesnot work in inside classes
+
+
+        // you have to use in fucntioal components
+
+
+        // 2)useEffect we use ueffect for getting side effect in a functional components
+
+    // useffect without dependency
+    // useffect(()=>{
+    //     // console.log('raheel')
+    //     // it runs again and again 
+    // })
+          
+
+        //    useEffect with []
+    //  useEffect(()=>{
+    //  console.log('raheel') 
+
+    // //  now it just runs when first time userenter in the page
+    //  },[])
+
+
+    //   useEffect with dependencies
+
+    // const [count, setCount]=useState(0)
+
+
+    // useEffect(()=>{
+    //     console.log('raheel')
+    // it runs when count state will change 
+    // } ,[count])      
+    // we can do data fetching from useEffect
+
+     
+
+    //   by default useEffect runs on every render its a default behavior of useEffect
+
+    // Don’t call Hooks inside loops, conditions, or nested functions.
+
+
+//    3)useReducers
+
+    // it is like as usestate but its for complex logics
+
+
+    //   4)useCallback
+//     The useCallback hook is used when you have a component in which the child 
+//     is rerendering again and again without need.
+
+// Pass an inline callback and an array of dependencies. useCallback will return a memoized version
+
+// of the callback that only changes if one of the dependencies has changed.
+
+//   useMemo
+
+// The useMemo and useCallback Hooks are similar. The main difference is 
+// that useMemo returns a memoized value and useCallback returns a memoized function
+// . You can learn more about useCallback in the useCallback chapter.
+  
+
+//  useRef
+// The useRef Hook allows you to persist values between renders.
+
+// It can be used to store a mutable value that does not cause a re-render when updated.
+           
+</script>
+
+
