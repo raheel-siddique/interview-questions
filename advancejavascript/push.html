@@ -1,0 +1,39 @@
+  <html>
+    <head>
+        <title>array methods</title>
+    </head>
+    <body>
+        <!-- <form> -->
+            <input type="text" placeholder="name" id="name" /><br><br>
+            <input type="number" placeholder="age" id="age" /><br><br>
+
+            <input type="text" placeholder="qualification" id="qualification" /><br><br>
+            <button onclick="submitData()">Register</button>
+
+
+        <!-- </form> -->
+    </body>
+  </html>
+
+<script>
+    
+
+    const dataOfUser=[{name:'raheel', age:'21',qualification:'bcs'},
+    {name:'rasim', age:'20',qualification:'imnter'},
+    {name:'daniyal', age:'18',qualification:'matrik'},
+    {name:'ahmed', age:'10',qualification:'nine'},
+    {name:'aman', age:'29',qualification:'bcs'},
+    {name:'Rafay', age:'15',qualification:'inter'}]
+
+
+    const submitData=()=>{
+    
+          const name=document.getElementById('name').value 
+          const age=document.getElementById('age').value 
+
+          const qualification=document.getElementById('qualification').value
+     dataOfUser.push(   {name:name, age:age,qualification:qualification})
+     
+  console.log(dataOfUser)
+    }
+</script>
