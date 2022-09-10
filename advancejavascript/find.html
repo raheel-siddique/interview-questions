@@ -1,0 +1,40 @@
+<script>
+//   find filter findindex it all retursn conditionaly
+//    find 
+// it conditionally return values but just 1
+
+// const dataOfUser=[5,20,10,30,50,2,60,34]
+
+//     const newUserData=dataOfUser.find((values, index)=>{
+//         return values<2
+//     })
+// console.log(newUserData)
+
+
+
+
+//   sec best 
+
+// const dataOfUser=[5,20,10,30,50,2,60,34]
+
+//    const newValues=dataOfUser.find((values, index)=>{
+//      return values > 30
+//    })
+// console.log(newValues)
+
+
+
+const dataOfUser=[{name:'raheel', age:'21',qualification:'bcs'},
+      {name:'rasim', age:'20',qualification:'imnter'},
+      {name:'raheel', age:'18',qualification:'matrik'},
+      {name:'ahmed', age:'10',qualification:'nine'},
+      {name:'aman', age:'29',qualification:'bcs'},
+      {name:'Rafay', age:'15',qualification:'inter'}]
+
+
+const newValues=dataOfUser.find((values, index)=>{
+  return values.age==15
+})
+console.log(newValues)
+
+</script>

@@ -1,0 +1,28 @@
+<script>
+
+    //    find 
+    // it conditionally return values all
+    
+    // const dataOfUser=[5,20,10,30,50,2,60,34]
+    
+    //     const newUserData=dataOfUser.filter((values, index)=>{
+    //         return values>5
+    //     })
+    // console.log(newUserData)
+
+
+
+    const dataOfUser=[{name:'raheel', age:'21',qualification:'bcs'},
+    {name:'rasim', age:'20',qualification:'imnter'},
+    {name:'daniyal', age:'18',qualification:'matrik'},
+    {name:'raheel', age:'10',qualification:'nine'},
+    {name:'aman', age:'29',qualification:'bcs'},
+    {name:'Rafay', age:'15',qualification:'inter'}]
+    
+    const newUserData=dataOfUser.filter((values, index)=>{
+        return values.age<20 
+        
+    })
+ console.log(newUserData)
+
+    </script>
